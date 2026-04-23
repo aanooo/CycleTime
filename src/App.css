@@ -1,0 +1,187 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d7dbe0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.controls {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.process-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.field span {
+  font-size: 0.9rem;
+  color: #333a44;
+  min-height: 2.6em;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #c6ccd3;
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: #0a63d6;
+  color: white;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #93a4bc;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #495a72;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.error {
+  color: #bd1515;
+}
+
+.status {
+  min-height: 1.2rem;
+  font-size: 0.75rem;
+}
+
+.status.active {
+  color: #3f546b;
+}
+
+.status.inactive {
+  color: #6c7988;
+}
+
+.kpis {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 0.9rem;
+}
+
+.kpi {
+  border: 1px solid #d7dbe0;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #586677;
+}
+
+.value {
+  margin-top: 0.2rem;
+  font-weight: 700;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #586677;
+  margin-top: 0.2rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+th,
+td {
+  border: 1px solid #d7dbe0;
+  padding: 0.55rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.comparison {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.compare-card {
+  border: 1px solid #d7dbe0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media (max-width: 760px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+}
